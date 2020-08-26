@@ -24,7 +24,7 @@ public class IpadWiFi {
     }
 
     public void enterPassword(String password) {
-        System.out.println(">> Enter password");
+        System.out.println(">> Enter password: " +password);
         PageUtil.waitForClickable(driver, txtPassword, 3);
         driver.findElement(txtPassword).clear();
         driver.findElement(txtPassword).sendKeys(password);

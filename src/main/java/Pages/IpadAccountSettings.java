@@ -46,7 +46,7 @@ public class IpadAccountSettings {
     }
 
     public String getServerPort() {
-        System.out.println(">> Verify that Server Port");
+        System.out.println(">> Verify Server Port");
         return driver.findElement(lblServerPort).getAttribute("value");
     }
 

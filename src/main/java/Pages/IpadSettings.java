@@ -30,12 +30,12 @@ public class IpadSettings {
 
     public void selectUser(String User) {
 
-        System.out.println(">> Select User");PageUtil.waitForVisible(driver, lblMailCalendarsNotes, 3);
+        System.out.println(">> Select User: " +User);PageUtil.waitForVisible(driver, lblMailCalendarsNotes, 3);
         getElementByXpathContainsText("//div[contains(text(), '"+User+"')]").click();
     }
 
     public void selectEmailAddress(String EmailAddress) {
-        System.out.println(">> Select email address: mbrown@gmail.com");
+        System.out.println(">> Select email address: " +EmailAddress);
         PageUtil.waitForVisible(driver, lblAccount, 3);
         getElementByXpathContainsText("//div[contains(text(), '"+EmailAddress+"')]").click();
     }
