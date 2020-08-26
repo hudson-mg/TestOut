@@ -30,9 +30,19 @@
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
             <version>6.8</version>
-            <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.10</version>
+        </dependency>
+
     </dependencies>
+
+    <properties>
+        <maven.compiler.source>1.11</maven.compiler.source>
+        <maven.complier.target>1.11</maven.complier.target>
+    </properties>
 
 
 </project>
